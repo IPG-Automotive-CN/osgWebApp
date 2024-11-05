@@ -1,0 +1,20 @@
+CMakeFiles/sample-ems.dir/src/odrSpiral.cpp.o: \
+  /home/ipgcn2/Documents/osgApp/web/src/odrSpiral.cpp \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/math.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/__config \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/pthread.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/stdlib.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat/stdlib.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stdlib.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/features.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/alloca.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat/math.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/math.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/type_traits \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/cstddef \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/version \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/__nullptr \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/limits \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx/__undef_macros

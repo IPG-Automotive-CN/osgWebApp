@@ -1,0 +1,24 @@
+CMakeFiles/sample-ems.dir/src/WSClient.c.o: \
+  /home/ipgcn2/Documents/osgApp/web/src/WSClient.c \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stdio.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/wasi/api.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stddef.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/alltypes.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stdint.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten/bits/stdint.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/features.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat/string.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/string.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/strings.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat/stdlib.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/stdlib.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/alloca.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/websocket.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/memory.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/emscripten.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/em_asm.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/em_macros.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/em_js.h \
+  /home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/emscripten/html5.h \
+  /home/ipgcn2/Documents/osgApp/web/src/WSClient.h \
+  /home/ipgcn2/Documents/osgApp/web/src/DataDefine.h

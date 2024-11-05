@@ -1,0 +1,1 @@
+-I/home/ipgcn2/Documents/osgApp/web/../../OpenSceneGraph/include -I/home/ipgcn2/Documents/osgApp/web/../../OpenSceneGraph/build/Emscripten/include -I"/home/ipgcn2/Documents/osgApp/web/src-gen"

@@ -1,0 +1,433 @@
+Performing C++ SOURCE FILE Test POPPLER_HAS_CAIRO failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_069a8/fast && /usr/bin/make  -f CMakeFiles/cmTC_069a8.dir/build.make CMakeFiles/cmTC_069a8.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl'
+Building CXX object CMakeFiles/cmTC_069a8.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DPOPPLER_HAS_CAIRO @CMakeFiles/cmTC_069a8.dir/includes_CXX.rsp  -MD -MT CMakeFiles/cmTC_069a8.dir/src.cxx.o -MF CMakeFiles/cmTC_069a8.dir/src.cxx.o.d -o CMakeFiles/cmTC_069a8.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl/src.cxx
+In file included from /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl/src.cxx:3:
+In file included from /usr/include/poppler/glib/poppler.h:22:
+In file included from /usr/include/glib-2.0/glib-object.h:22:
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:28:
+In file included from /usr/include/glib-2.0/glib.h:30:
+In file included from /usr/include/glib-2.0/glib/galloca.h:32:
+/usr/include/glib-2.0/glib/gtypes.h:463:3: error: static_assert failed due to requirement 'sizeof(unsigned long long) == sizeof(unsigned long)' "Expression evaluates to false"
+  G_STATIC_ASSERT(sizeof (unsigned long long) == sizeof (guint64));
+  ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:742:31: note: expanded from macro 'G_STATIC_ASSERT'
+#define G_STATIC_ASSERT(expr) static_assert (expr, "Expression evaluates to false")
+                              ^              ~~~~
+1 error generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -DPOPPLER_HAS_CAIRO -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -MD -MT CMakeFiles/cmTC_069a8.dir/src.cxx.o -MF CMakeFiles/cmTC_069a8.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_069a8.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_069a8.dir/build.make:80: CMakeFiles/cmTC_069a8.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-G2E5Zl'
+make: *** [Makefile:127: cmTC_069a8/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        #include <cstdlib>
+        #include <poppler.h>
+        int main()
+        {
+        #ifdef POPPLER_HAS_CAIRO
+           return EXIT_SUCCESS;
+        #else
+           return EXIT_FAILURE
+        #endif
+        }
+        
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_GCC_BUILTINS failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8edbb/fast && /usr/bin/make  -f CMakeFiles/cmTC_8edbb.dir/build.make CMakeFiles/cmTC_8edbb.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo'
+Building CXX object CMakeFiles/cmTC_8edbb.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -D_OPENTHREADS_ATOMIC_USE_GCC_BUILTINS @CMakeFiles/cmTC_8edbb.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_8edbb.dir/src.cxx.o -MF CMakeFiles/cmTC_8edbb.dir/src.cxx.o.d -o CMakeFiles/cmTC_8edbb.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/src.cxx
+Linking CXX executable cmTC_8edbb.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edbb.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++  -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  @CMakeFiles/cmTC_8edbb.dir/objects1 -o cmTC_8edbb.js 
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo'
+
+
+...and run output:
+TypeError: Failed to parse URL from /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.wasm
+TypeError: Failed to parse URL from /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.wasm
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.js:130
+      throw ex;
+      ^
+
+RuntimeError: abort(TypeError: Failed to parse URL from /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.wasm) at Error
+    at jsStackTrace (/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.js:1978:17)
+    at stackTrace (/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.js:1995:16)
+    at process.abort (/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.js:1735:44)
+    at process.emit (node:events:519:28)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+    at process.abort (/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xY99vo/cmTC_8edbb.js:1741:9)
+    at process.emit (node:events:519:28)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at throwUnhandledRejectionsMode (node:internal/process/promises:385:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+
+Node.js v20.15.1
+
+Return value: 7
+Source file was:
+
+       #include <cstdlib>
+
+       int main()
+       {
+          unsigned value = 0;
+          void* ptr = &value;
+          __sync_add_and_fetch(&value, 1);
+          __sync_synchronize();
+          __sync_sub_and_fetch(&value, 1);
+          if (!__sync_bool_compare_and_swap(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (!__sync_bool_compare_and_swap(&ptr, ptr, ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a96f5/fast && /usr/bin/make  -f CMakeFiles/cmTC_a96f5.dir/build.make CMakeFiles/cmTC_a96f5.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo'
+Building CXX object CMakeFiles/cmTC_a96f5.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -D_OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS @CMakeFiles/cmTC_a96f5.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_a96f5.dir/src.cxx.o -MF CMakeFiles/cmTC_a96f5.dir/src.cxx.o.d -o CMakeFiles/cmTC_a96f5.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx:8:11: error: use of undeclared identifier '__add_and_fetch'
+          __add_and_fetch(&value, 1);
+          ^
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx:9:11: error: use of undeclared identifier '__synchronize'
+          __synchronize(value);
+          ^
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx:10:11: error: use of undeclared identifier '__sub_and_fetch'
+          __sub_and_fetch(&value, 1);
+          ^
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx:11:16: error: use of undeclared identifier '__compare_and_swap'
+          if (!__compare_and_swap(&value, 0, 1))
+               ^
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx:14:16: error: use of undeclared identifier '__compare_and_swap'
+          if (!__compare_and_swap((unsigned long*)&ptr, (unsigned long)ptr, (unsigned long)ptr))
+               ^
+5 errors generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -D_OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual -MD -MT CMakeFiles/cmTC_a96f5.dir/src.cxx.o -MF CMakeFiles/cmTC_a96f5.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_a96f5.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_a96f5.dir/build.make:80: CMakeFiles/cmTC_a96f5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-efungo'
+make: *** [Makefile:127: cmTC_a96f5/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+       #include <stdlib.h>
+
+       int main(int, const char**)
+       {
+          unsigned value = 0;
+          void* ptr = &value;
+          __add_and_fetch(&value, 1);
+          __synchronize(value);
+          __sub_and_fetch(&value, 1);
+          if (!__compare_and_swap(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (!__compare_and_swap((unsigned long*)&ptr, (unsigned long)ptr, (unsigned long)ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_SUN failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ab528/fast && /usr/bin/make  -f CMakeFiles/cmTC_ab528.dir/build.make CMakeFiles/cmTC_ab528.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o'
+Building CXX object CMakeFiles/cmTC_ab528.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -D_OPENTHREADS_ATOMIC_USE_SUN @CMakeFiles/cmTC_ab528.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_ab528.dir/src.cxx.o -MF CMakeFiles/cmTC_ab528.dir/src.cxx.o.d -o CMakeFiles/cmTC_ab528.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o/src.cxx
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o/src.cxx:2:17: fatal error: 'atomic.h' file not found
+       #include <atomic.h>
+                ^~~~~~~~~~
+1 error generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -D_OPENTHREADS_ATOMIC_USE_SUN -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual -MD -MT CMakeFiles/cmTC_ab528.dir/src.cxx.o -MF CMakeFiles/cmTC_ab528.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_ab528.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_ab528.dir/build.make:80: CMakeFiles/cmTC_ab528.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-gpGh3o'
+make: *** [Makefile:127: cmTC_ab528/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+       #include <atomic.h>
+       #include <cstdlib>
+
+       int main(int, const char**)
+       {
+          uint_t value = 0;
+          void* ptr = &value;
+          atomic_inc_uint_nv(&value);
+          membar_consumer();
+          atomic_dec_uint_nv(&value);
+          if (0 != atomic_cas_uint(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (ptr != atomic_cas_ptr(&ptr, ptr, ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_426fd/fast && /usr/bin/make  -f CMakeFiles/cmTC_426fd.dir/build.make CMakeFiles/cmTC_426fd.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo'
+Building CXX object CMakeFiles/cmTC_426fd.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -D_OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED @CMakeFiles/cmTC_426fd.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_426fd.dir/src.cxx.o -MF CMakeFiles/cmTC_426fd.dir/src.cxx.o.d -o CMakeFiles/cmTC_426fd.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo/src.cxx
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo/src.cxx:2:17: fatal error: 'windows.h' file not found
+       #include <windows.h>
+                ^~~~~~~~~~~
+1 error generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -D_OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual -MD -MT CMakeFiles/cmTC_426fd.dir/src.cxx.o -MF CMakeFiles/cmTC_426fd.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_426fd.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_426fd.dir/build.make:80: CMakeFiles/cmTC_426fd.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-F7c4Fo'
+make: *** [Makefile:127: cmTC_426fd/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+       #include <windows.h>
+       #include <intrin.h>
+       #include <cstdlib>
+
+       #pragma intrinsic(_InterlockedAnd)
+       #pragma intrinsic(_InterlockedOr)
+       #pragma intrinsic(_InterlockedXor)
+
+       int main(int, const char**)
+       {
+          volatile long value = 0;
+          long data = 0;
+          long* volatile ptr = &data;
+
+          InterlockedIncrement(&value);
+          MemoryBarrier();
+          InterlockedDecrement(&value);
+
+          if (0 != InterlockedCompareExchange(&value, 1, 0))
+             return EXIT_FAILURE;
+
+          if (ptr != InterlockedCompareExchangePointer((PVOID volatile*)&ptr, (PVOID)ptr, (PVOID)ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_BSD_ATOMIC failed with the following compile output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad691/fast && /usr/bin/make  -f CMakeFiles/cmTC_ad691.dir/build.make CMakeFiles/cmTC_ad691.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp'
+Building CXX object CMakeFiles/cmTC_ad691.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -D_OPENTHREADS_ATOMIC_USE_BSD_ATOMIC @CMakeFiles/cmTC_ad691.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_ad691.dir/src.cxx.o -MF CMakeFiles/cmTC_ad691.dir/src.cxx.o.d -o CMakeFiles/cmTC_ad691.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp/src.cxx
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp/src.cxx:2:17: fatal error: 'libkern/OSAtomic.h' file not found
+       #include <libkern/OSAtomic.h>
+                ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -D_OPENTHREADS_ATOMIC_USE_BSD_ATOMIC -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual -MD -MT CMakeFiles/cmTC_ad691.dir/src.cxx.o -MF CMakeFiles/cmTC_ad691.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_ad691.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_ad691.dir/build.make:80: CMakeFiles/cmTC_ad691.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jaBLlp'
+make: *** [Makefile:127: cmTC_ad691/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+       #include <libkern/OSAtomic.h>
+
+       int main()
+       {
+         volatile int32_t value = 0;
+         long data = 0;
+         long * volatile ptr = &data;
+
+         OSAtomicIncrement32(&value);
+         OSMemoryBarrier();
+         OSAtomicDecrement32(&value);
+         OSAtomicCompareAndSwapInt(value, 1, &value);
+         OSAtomicCompareAndSwapPtr(ptr, ptr, (void * volatile *)&ptr);
+       }
+       
+
+Determining if the function pthread_yield exists failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-EQFdsm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8c302/fast && /usr/bin/make  -f CMakeFiles/cmTC_8c302.dir/build.make CMakeFiles/cmTC_8c302.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-EQFdsm'
+Building C object CMakeFiles/cmTC_8c302.dir/CheckFunctionExists.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  @CMakeFiles/cmTC_8c302.dir/includes_C.rsp -DCHECK_FUNCTION_EXISTS=pthread_yield -MD -MT CMakeFiles/cmTC_8c302.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8c302.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8c302.dir/CheckFunctionExists.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-EQFdsm/CheckFunctionExists.c
+Linking C executable cmTC_8c302.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c302.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_yield @CMakeFiles/cmTC_8c302.dir/objects1 -o cmTC_8c302.js 
+error: undefined symbol: pthread_yield (referenced by top-level compiled C/C++ code)
+warning: Link with `-s LLD_REPORT_UNDEFINED` to get more information on undefined symbols
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+warning: _pthread_yield may need to be added to EXPORTED_FUNCTIONS if it arrives from a system library
+Error: Aborting compilation due to previous errors
+emcc: error: '/home/ipgcn2/Documents/emsdk/node/16.20.0_64bit/bin/node /home/ipgcn2/Documents/emsdk/upstream/emscripten/src/compiler.js /tmp/tmpwtzmezng.txt' failed (1)
+make[1]: *** [CMakeFiles/cmTC_8c302.dir/build.make:102: cmTC_8c302.js] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-EQFdsm'
+make: *** [Makefile:127: cmTC_8c302/fast] Error 2
+
+
+
+Determining if the function pthread_setconcurrency exists failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-cUbBEp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8c5c6/fast && /usr/bin/make  -f CMakeFiles/cmTC_8c5c6.dir/build.make CMakeFiles/cmTC_8c5c6.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-cUbBEp'
+Building C object CMakeFiles/cmTC_8c5c6.dir/CheckFunctionExists.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  @CMakeFiles/cmTC_8c5c6.dir/includes_C.rsp -DCHECK_FUNCTION_EXISTS=pthread_setconcurrency -MD -MT CMakeFiles/cmTC_8c5c6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8c5c6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8c5c6.dir/CheckFunctionExists.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-cUbBEp/CheckFunctionExists.c
+Linking C executable cmTC_8c5c6.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c5c6.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_setconcurrency @CMakeFiles/cmTC_8c5c6.dir/objects1 -o cmTC_8c5c6.js 
+error: undefined symbol: pthread_setconcurrency (referenced by top-level compiled C/C++ code)
+warning: Link with `-s LLD_REPORT_UNDEFINED` to get more information on undefined symbols
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+warning: _pthread_setconcurrency may need to be added to EXPORTED_FUNCTIONS if it arrives from a system library
+Error: Aborting compilation due to previous errors
+emcc: error: '/home/ipgcn2/Documents/emsdk/node/16.20.0_64bit/bin/node /home/ipgcn2/Documents/emsdk/upstream/emscripten/src/compiler.js /tmp/tmpph8rovrn.txt' failed (1)
+make[1]: *** [CMakeFiles/cmTC_8c5c6.dir/build.make:102: cmTC_8c5c6.js] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-cUbBEp'
+make: *** [Makefile:127: cmTC_8c5c6/fast] Error 2
+
+
+
+Determining if the function pthread_getconcurrency exists failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-OZu7Dl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa268/fast && /usr/bin/make  -f CMakeFiles/cmTC_aa268.dir/build.make CMakeFiles/cmTC_aa268.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-OZu7Dl'
+Building C object CMakeFiles/cmTC_aa268.dir/CheckFunctionExists.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  @CMakeFiles/cmTC_aa268.dir/includes_C.rsp -DCHECK_FUNCTION_EXISTS=pthread_getconcurrency -MD -MT CMakeFiles/cmTC_aa268.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_aa268.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_aa268.dir/CheckFunctionExists.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-OZu7Dl/CheckFunctionExists.c
+Linking C executable cmTC_aa268.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa268.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_getconcurrency @CMakeFiles/cmTC_aa268.dir/objects1 -o cmTC_aa268.js 
+error: undefined symbol: pthread_getconcurrency (referenced by top-level compiled C/C++ code)
+warning: Link with `-s LLD_REPORT_UNDEFINED` to get more information on undefined symbols
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+warning: _pthread_getconcurrency may need to be added to EXPORTED_FUNCTIONS if it arrives from a system library
+Error: Aborting compilation due to previous errors
+emcc: error: '/home/ipgcn2/Documents/emsdk/node/16.20.0_64bit/bin/node /home/ipgcn2/Documents/emsdk/upstream/emscripten/src/compiler.js /tmp/tmp2czlrwv0.txt' failed (1)
+make[1]: *** [CMakeFiles/cmTC_aa268.dir/build.make:102: cmTC_aa268.js] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-OZu7Dl'
+make: *** [Makefile:127: cmTC_aa268/fast] Error 2
+
+
+
+Determining if the function pthread_setaffinity_np exists failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xTXlZl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0925f/fast && /usr/bin/make  -f CMakeFiles/cmTC_0925f.dir/build.make CMakeFiles/cmTC_0925f.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xTXlZl'
+Building C object CMakeFiles/cmTC_0925f.dir/CheckFunctionExists.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  @CMakeFiles/cmTC_0925f.dir/includes_C.rsp -DCHECK_FUNCTION_EXISTS=pthread_setaffinity_np -MD -MT CMakeFiles/cmTC_0925f.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_0925f.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_0925f.dir/CheckFunctionExists.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xTXlZl/CheckFunctionExists.c
+Linking C executable cmTC_0925f.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0925f.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_setaffinity_np @CMakeFiles/cmTC_0925f.dir/objects1 -o cmTC_0925f.js 
+error: undefined symbol: pthread_setaffinity_np (referenced by top-level compiled C/C++ code)
+warning: Link with `-s LLD_REPORT_UNDEFINED` to get more information on undefined symbols
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+warning: _pthread_setaffinity_np may need to be added to EXPORTED_FUNCTIONS if it arrives from a system library
+Error: Aborting compilation due to previous errors
+emcc: error: '/home/ipgcn2/Documents/emsdk/node/16.20.0_64bit/bin/node /home/ipgcn2/Documents/emsdk/upstream/emscripten/src/compiler.js /tmp/tmpw4l9yih5.txt' failed (1)
+make[1]: *** [CMakeFiles/cmTC_0925f.dir/build.make:102: cmTC_0925f.js] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-xTXlZl'
+make: *** [Makefile:127: cmTC_0925f/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test HAVE_THREE_PARAM_SCHED_SETAFFINITY failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-CWHhQm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cb60f/fast && /usr/bin/make  -f CMakeFiles/cmTC_cb60f.dir/build.make CMakeFiles/cmTC_cb60f.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-CWHhQm'
+Building CXX object CMakeFiles/cmTC_cb60f.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DHAVE_THREE_PARAM_SCHED_SETAFFINITY @CMakeFiles/cmTC_cb60f.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_cb60f.dir/src.cxx.o -MF CMakeFiles/cmTC_cb60f.dir/src.cxx.o.d -o CMakeFiles/cmTC_cb60f.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-CWHhQm/src.cxx
+Linking CXX executable cmTC_cb60f.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb60f.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++  -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  @CMakeFiles/cmTC_cb60f.dir/objects1 -o cmTC_cb60f.js 
+error: undefined symbol: sched_setaffinity (referenced by top-level compiled C/C++ code)
+warning: Link with `-s LLD_REPORT_UNDEFINED` to get more information on undefined symbols
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+warning: _sched_setaffinity may need to be added to EXPORTED_FUNCTIONS if it arrives from a system library
+Error: Aborting compilation due to previous errors
+em++: error: '/home/ipgcn2/Documents/emsdk/node/16.20.0_64bit/bin/node /home/ipgcn2/Documents/emsdk/upstream/emscripten/src/compiler.js /tmp/tmpcr3vtypm.txt' failed (1)
+make[1]: *** [CMakeFiles/cmTC_cb60f.dir/build.make:102: cmTC_cb60f.js] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-CWHhQm'
+make: *** [Makefile:127: cmTC_cb60f/fast] Error 2
+
+
+Source file was:
+
+            #include <sched.h>
+            int main() {
+            cpu_set_t cpumask;
+            sched_setaffinity( 0, sizeof(cpumask), &cpumask );
+            return 0;
+            }
+
+Performing C++ SOURCE FILE Test HAVE_TWO_PARAM_SCHED_SETAFFINITY failed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d4bbb/fast && /usr/bin/make  -f CMakeFiles/cmTC_d4bbb.dir/build.make CMakeFiles/cmTC_d4bbb.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn'
+Building CXX object CMakeFiles/cmTC_d4bbb.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DHAVE_TWO_PARAM_SCHED_SETAFFINITY @CMakeFiles/cmTC_d4bbb.dir/includes_CXX.rsp -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual  -MD -MT CMakeFiles/cmTC_d4bbb.dir/src.cxx.o -MF CMakeFiles/cmTC_d4bbb.dir/src.cxx.o.d -o CMakeFiles/cmTC_d4bbb.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn/src.cxx
+/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn/src.cxx:5:19: error: no matching function for call to 'sched_setaffinity'
+                  sched_setaffinity( 0, &cpumask );
+                  ^~~~~~~~~~~~~~~~~
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc/sched.h:82:5: note: candidate function not viable: requires 3 arguments, but 2 were provided
+int sched_setaffinity(pid_t, size_t, const cpu_set_t *);
+    ^
+1 error generated.
+em++: error: '/home/ipgcn2/Documents/emsdk/upstream/bin/clang++ -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=1 -D__EMSCRIPTEN_minor__=39 -D__EMSCRIPTEN_tiny__=16 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration -Xclang -nostdsysteminc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libcxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libcxxabi/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libunwind/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/compat -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/libc -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/lib/libc/musl/arch/emscripten -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/local/include -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/cache/wasm/include -DEMSCRIPTEN -fignore-exceptions -DHAVE_TWO_PARAM_SCHED_SETAFFINITY -I/usr/include/poppler/glib -I/usr/include/poppler -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -Wall -Wparentheses -Wno-long-long -Wno-import -pedantic -Wreturn-type -Wmissing-braces -Wunknown-pragmas -Wunused -Wno-overloaded-virtual -MD -MT CMakeFiles/cmTC_d4bbb.dir/src.cxx.o -MF CMakeFiles/cmTC_d4bbb.dir/src.cxx.o.d -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn/src.cxx -Xclang -isystem/home/ipgcn2/Documents/emsdk/upstream/emscripten/system/include/SDL -c -o CMakeFiles/cmTC_d4bbb.dir/src.cxx.o -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr' failed (1)
+make[1]: *** [CMakeFiles/cmTC_d4bbb.dir/build.make:80: CMakeFiles/cmTC_d4bbb.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-jUOYQn'
+make: *** [Makefile:127: cmTC_d4bbb/fast] Error 2
+
+
+Source file was:
+
+                #include <sched.h>
+                int main() {
+                  cpu_set_t cpumask;
+                  sched_setaffinity( 0, &cpumask );
+                  return 0;
+                }
+

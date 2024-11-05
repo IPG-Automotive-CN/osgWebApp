@@ -1,0 +1,87 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 5.15.0-72-generic - x86_64
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-j9QKVl
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_08779/fast && /usr/bin/make  -f CMakeFiles/cmTC_08779.dir/build.make CMakeFiles/cmTC_08779.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-j9QKVl'
+Building C object CMakeFiles/cmTC_08779.dir/src.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_08779.dir/src.c.o -MF CMakeFiles/cmTC_08779.dir/src.c.o.d -o CMakeFiles/cmTC_08779.dir/src.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-j9QKVl/src.c
+Linking C executable cmTC_08779.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08779.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc @CMakeFiles/cmTC_08779.dir/objects1 -o cmTC_08779.js 
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-j9QKVl'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Performing C++ SOURCE FILE Test GL_HEADER_HAS_GLINT64 succeeded with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-QiAxcm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b7c7b/fast && /usr/bin/make  -f CMakeFiles/cmTC_b7c7b.dir/build.make CMakeFiles/cmTC_b7c7b.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-QiAxcm'
+Building CXX object CMakeFiles/cmTC_b7c7b.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DGL_HEADER_HAS_GLINT64   -MD -MT CMakeFiles/cmTC_b7c7b.dir/src.cxx.o -MF CMakeFiles/cmTC_b7c7b.dir/src.cxx.o.d -o CMakeFiles/cmTC_b7c7b.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-QiAxcm/src.cxx
+Linking CXX executable cmTC_b7c7b.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7c7b.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_b7c7b.dir/objects1 -o cmTC_b7c7b.js 
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-QiAxcm'
+
+
+Source file was:
+#include <GLES2/gl2.h>
+    
+    int main() { GLint64 test; return 0; }
+
+Performing C++ SOURCE FILE Test GL_HEADER_HAS_GLUINT64 succeeded with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-4p1lqp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d9888/fast && /usr/bin/make  -f CMakeFiles/cmTC_d9888.dir/build.make CMakeFiles/cmTC_d9888.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-4p1lqp'
+Building CXX object CMakeFiles/cmTC_d9888.dir/src.cxx.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DGL_HEADER_HAS_GLUINT64   -MD -MT CMakeFiles/cmTC_d9888.dir/src.cxx.o -MF CMakeFiles/cmTC_d9888.dir/src.cxx.o.d -o CMakeFiles/cmTC_d9888.dir/src.cxx.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-4p1lqp/src.cxx
+Linking CXX executable cmTC_d9888.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9888.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ @CMakeFiles/cmTC_d9888.dir/objects1 -o cmTC_d9888.js 
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-4p1lqp'
+
+
+Source file was:
+#include <GLES2/gl2.h>
+    
+    int main() { GLuint64 test; return 0; }
+
+Determining if the function sched_yield exists passed with the following output:
+Change Dir: /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-UN7Jjm
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_500f7/fast && /usr/bin/make  -f CMakeFiles/cmTC_500f7.dir/build.make CMakeFiles/cmTC_500f7.dir/build
+make[1]: Entering directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-UN7Jjm'
+Building C object CMakeFiles/cmTC_500f7.dir/CheckFunctionExists.c.o
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  @CMakeFiles/cmTC_500f7.dir/includes_C.rsp -DCHECK_FUNCTION_EXISTS=sched_yield -MD -MT CMakeFiles/cmTC_500f7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_500f7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_500f7.dir/CheckFunctionExists.c.o -c /home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-UN7Jjm/CheckFunctionExists.c
+Linking C executable cmTC_500f7.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_500f7.dir/link.txt --verbose=1
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=sched_yield @CMakeFiles/cmTC_500f7.dir/objects1 -o cmTC_500f7.js 
+make[1]: Leaving directory '/home/ipgcn2/Documents/osgApp/web/build/CMakeFiles/CMakeScratch/TryCompile-UN7Jjm'
+
+
+

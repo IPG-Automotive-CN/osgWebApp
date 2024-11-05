@@ -1,0 +1,1 @@
+/home/ipgcn2/Documents/emsdk/upstream/emscripten/em++ -DNDEBUG -O2 -s USE_LIBJPEG=1 -s USE_ZLIB=1 -s USE_SDL=2 -s ALLOW_MEMORY_GROWTH=1 -s TOTAL_MEMORY=256MB  -s ERROR_ON_UNDEFINED_SYMBOLS=0 -O2 --preload-file /home/ipgcn2/Documents/osgApp/web/res@res -lwebsocket.js @CMakeFiles/sample-ems.dir/objects1 -o sample-ems.html @CMakeFiles/sample-ems.dir/linkLibs.rsp

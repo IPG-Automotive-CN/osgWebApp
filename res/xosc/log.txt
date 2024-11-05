@@ -1,0 +1,117 @@
+esmini GIT REV: v2.37.12-0-bf3246da-dirty
+esmini GIT TAG: v2.37.12
+esmini GIT BRANCH: tags/v2.37.12^0
+esmini BUILD VERSION: N/A - client build
+No fixed timestep specified - running in realtime speed
+Generated seed 3654136683
+Loading ./lane_change.xosc (v1.0)
+0 variables
+Loaded OpenDRIVE: ../xodr/jolengatan.xodr
+Expr ${250/3.6} = 250/3.6 = 69.4444444444
+Expr ${250/3.6} = 250/3.6 = 69.4444444444
+Expr ${250/3.6} = 250/3.6 = 69.4444444444
+Expr ${250/3.6} = 250/3.6 = 69.4444444444
+Parameter SetAction depricated from OSC 1.2. Please use Variable SetAction instead. Accepting for this time.
+6 parameters:
+   DummyParameter3 = lane_change_param
+   DummyParameter2 = true
+   DummyParameter = 2
+   TargetVehicle = car_red
+   EgoStartS = 50
+   HostVehicle = car_white
+0.000: -------------Viewer Created!------------------
+0.000: No scenegraph 3D model loaded. Generating a simplistic one...
+0.000: Adjusted Truck bounding box to model semi_tractor.osgb - xyz: 2.20, -0.00, 1.68 lwh: 5.70, 2.60, 3.36
+0.000: Adjusted Truck+ bounding box to model semi_trailer.osgb - xyz: 2.56, -0.00, 1.77 lwh: 11.23, 2.60, 3.54
+0.000: Missing wheel node wheel_fr in vehicle model Truck+ - ignoring
+0.000: Adjusted Truck++ bounding box to model truck_trailer.osgb - xyz: 3.06, -0.00, 1.77 lwh: 11.23, 2.60, 3.54
+0.000: Init Ego TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: Ego New position:
+0.000: Pos(294.88, -63.30, 0.00) Rot(3.22, 0.00, 0.00) roadId 1 laneId -1 offset 0.00 t -1.78
+0.000: Init Ego LongitudinalAction initState -> startTransition -> runningState
+0.000: Init Truck TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: Truck New position:
+0.000: Pos(45.86, -46.45, 0.00) Rot(6.17, 0.00, 0.00) roadId 1 laneId 1 offset 0.00 t 1.78
+0.000: Init Truck LongitudinalAction initState -> startTransition -> runningState
+0.000: storyBoard initState -> startTransition -> runningState
+0.000: Lane change story initState -> startTransition -> runningState
+0.000: Lane change act initState -> initToStandbyTransition -> standbyState
+0.000: Init Ego TeleportAction runningState -> endTransition -> completeState
+0.000: Init Ego LongitudinalAction runningState -> endTransition -> completeState
+0.000: Init Truck TeleportAction runningState -> endTransition -> completeState
+0.000: Init Truck LongitudinalAction runningState -> endTransition -> completeState
+0.001: Trigger /------------------------------------------------
+0.001: CutInActStart == true, 0.0010 > 0.0000 edge: risingOrFalling
+0.001: Trigger  ------------------------------------------------/
+0.001: Lane change act standbyState -> startTransition -> runningState
+0.001: Lane change initState -> startTransition -> runningState
+0.001: Lane change Ego maneuver initState -> startTransition -> runningState
+0.001: Lane change Ego event initState -> initToStandbyTransition -> standbyState
+0.001: EgoGoOffRoadEvent initState -> initToStandbyTransition -> standbyState
+0.001: EgoGoOnRoadEvent initState -> initToStandbyTransition -> standbyState
+0.001: Lane change 2 initState -> startTransition -> runningState
+0.001: Lane change Target maneuver initState -> startTransition -> runningState
+0.001: Lane change Target event initState -> initToStandbyTransition -> standbyState
+0.001: Dummy parameter event initState -> initToStandbyTransition -> standbyState
+3.001: Trigger /------------------------------------------------
+3.001: Lane change Target condition == true, 3.0010 > 3.0000 edge: rising
+3.001: Trigger  ------------------------------------------------/
+3.001: Dummy parameter event standbyState -> startTransition -> runningState
+3.001: Set parameter DummyParameter = 11
+3.001: Dummy parameter action initState -> startTransition -> runningState
+3.001: Dummy parameter action runningState -> stopTransition -> completeState
+3.017: Trigger /------------------------------------------------
+3.017: parameter DummyParameter 0 > 10 edge: rising
+3.017: Trigger  ------------------------------------------------/
+3.017: Dummy parameter event complete after 1 execution
+3.017: Dummy parameter event runningState -> endTransition -> completeState
+3.017: Event Dummy parameter event ended, overwritten by event Lane change Target event
+3.017: Lane change Target event standbyState -> startTransition -> runningState
+3.017: Lane change Target action initState -> startTransition -> runningState
+4.001: Trigger /------------------------------------------------
+4.001: Lane change Ego condition == true, 4.0010 > 4.0000 edge: rising
+4.001: Trigger  ------------------------------------------------/
+4.001: Lane change Ego event standbyState -> startTransition -> runningState
+4.001: Lane change Ego action initState -> startTransition -> runningState
+5.001: Lane change Target action runningState -> endTransition -> completeState
+5.001: Lane change Target event complete after 1 execution
+5.001: Lane change Target event runningState -> endTransition -> completeState
+5.001: Lane change Target maneuver runningState -> endTransition -> completeState
+5.001: Lane change 2 complete after 1 execution
+5.001: Lane change 2 runningState -> endTransition -> completeState
+5.985: Lane change Ego action runningState -> endTransition -> completeState
+5.985: Lane change Ego event complete after 1 execution
+5.985: Lane change Ego event runningState -> endTransition -> completeState
+6.001: EgoGoOffRoadCondition timer 1.00s started
+7.001: EgoGoOffRoadCondition timer expired at 1.00 seconds
+7.001: Trigger /------------------------------------------------
+7.001: EgoGoOffRoadCondition == true, element: Lane change Ego event state: END_TRANSITION, edge: rising
+7.001: Trigger  ------------------------------------------------/
+7.001: EgoGoOffRoadEvent standbyState -> startTransition -> runningState
+7.001: EgoGoOffRoadAction initState -> startTransition -> runningState
+10.368: EgoGoOffRoadAction runningState -> endTransition -> completeState
+10.368: EgoGoOffRoadEvent complete after 1 execution
+10.368: EgoGoOffRoadEvent runningState -> endTransition -> completeState
+11.084: Trigger /------------------------------------------------
+11.084: EgoGoOnRoadCondition == true, off road duration: 2.52 >= 2.50, edge: rising
+11.084: Triggering entity 0: Ego
+11.084: Trigger  ------------------------------------------------/
+11.084: EgoGoOnRoadEvent standbyState -> startTransition -> runningState
+11.084: EgoGoOnRoadAction initState -> startTransition -> runningState
+14.068: EgoGoOnRoadAction runningState -> endTransition -> completeState
+14.068: EgoGoOnRoadEvent complete after 1 execution
+14.068: EgoGoOnRoadEvent runningState -> endTransition -> completeState
+14.068: Lane change Ego maneuver runningState -> endTransition -> completeState
+14.068: Lane change complete after 1 execution
+14.068: Lane change runningState -> endTransition -> completeState
+14.068: Lane change act runningState -> endTransition -> completeState
+14.068: Lane change story runningState -> endTransition -> completeState
+14.085: QuitCondition timer 3.00s started
+17.085: QuitCondition timer expired at 3.00 seconds
+17.085: Trigger /------------------------------------------------
+17.085: QuitCondition == true, element: EgoGoOnRoadEvent state: END_TRANSITION, edge: rising
+17.085: Trigger  ------------------------------------------------/
+17.085: storyBoard runningState -> stopTransition -> completeState
+Closing
