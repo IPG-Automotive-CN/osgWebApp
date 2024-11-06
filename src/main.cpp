@@ -154,23 +154,19 @@ int main(int argc, char *argv[])
             oscPath = argv[i + 1];
         }
     }
-//git config --global user.email "hao.li@ipg-automotive.com"
-//git config --global user.name "IPG-Automotive-CN"
 
     if(url != NULL)
     {
         printf("websocket url = %s\n", url);
         createWebsocket(url);
     }
-    oscPath = "/res/xosc/cut-in.xosc";
+    
     if(oscPath != NULL)
     {
         printf("osc file path = %s\n", oscPath);
     }
-
+    SE_Env::Inst().AddPath("res/xosc");
     
-    
-    //SE_Env::Inst().AddPath("res/xosc");
 
     printf("OSGWeb. Starting...XXXYYY\n");
     
