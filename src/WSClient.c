@@ -158,10 +158,11 @@ EM_BOOL onMessage(int eventType, const EmscriptenWebSocketMessageEvent *e, void 
             bufferSize = INITIAL_BUFFER_SIZE;
             buffer = malloc(bufferSize);
             bufferLength = 0;
-            setNeedReset(1);
+            
         } else if (strcmp(text, "end of file") == 0) 
         {
             prefix = 0;
+            setNeedReset(1);
             printf("Received file with %d bytes\n", bufferLength);
 
         }

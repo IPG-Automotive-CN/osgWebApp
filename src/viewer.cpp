@@ -1282,6 +1282,7 @@ Viewer::Viewer(roadmanager::OpenDrive* odrManager,
     light->setAmbient(osg::Vec4(ambient, ambient, 0.9f * ambient, 1.0f));
     light->setDiffuse(osg::Vec4(0.8f, 0.8f, 0.7f, 1.0f));
 
+    // osgText::Text *testText = new osgText::Text;
     //infoText = new osgText::Text;
     // TODO Add a New Camera to Show UI Text 
     // // Overlay text
